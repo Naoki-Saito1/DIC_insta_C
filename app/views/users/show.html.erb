@@ -1,0 +1,9 @@
+
+<h1>NAME:<%= @user.name %></h1>
+<p>メールアドレス: <%= @user.email %></p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @user.image.url, style:'width:200px'   %>
+</p>
+
+<%= link_to "編集", edit_user_path(current_user.id) %>
