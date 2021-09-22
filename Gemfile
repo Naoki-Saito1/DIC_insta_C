@@ -46,6 +46,9 @@ group :test do
   gem 'webdrivers'
 end
 
+group :development do
+  gem 'letter_opener_web'
+end
 
 gem 'tzinfo-data'
 gem 'bcrypt'
@@ -53,3 +56,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'mimemagic', '0.3.7'
 gem 'dotenv-rails'
+gem 'rexml'
