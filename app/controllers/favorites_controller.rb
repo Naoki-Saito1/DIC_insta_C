@@ -1,6 +1,7 @@
 class FavoritesController < ApplicationController
   def index
-    @favorite = current_user.favorites.all
+    @favorites = current_user.favorites.all
+    
   end
 
   def create
@@ -10,6 +11,9 @@ class FavoritesController < ApplicationController
   def destroy
     favorite = current_user.favorites.find_by(id: params[:id]).destroy
     redirect_to posts_path, notice: "#{favorite.post.user.name}さんのブログをお気に入り解除しました"
+  end
+  def favorite_params
+    params.require(:favorite).permit(:image, :image_cache, :title, :content, :user_id)
   end
 end
 

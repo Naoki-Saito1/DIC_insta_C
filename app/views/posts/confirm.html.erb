@@ -3,9 +3,11 @@
   <!-- 確認画面でアップロードした画像を表示させるための記述 -->
   <%= image_tag(@post.image.url) if @post.image && @post.image.url %>
   <ul>
-  <li><%= form.hidden_field :image_cache　%></li>
-  <li><%= form.text_field :title %></li>
-  <li><%= form.text_area :content %></li>
+  <li><%= form.hidden_field :image_cache %></li>
+  <li><%= form.hidden_field :title %></li>
+  <li><%= form.hidden_field :content %></li>
+  <li>title:<%= @post.title %></li>
+  <li>content:<%= @post.content %></li>
   <li><%= form.submit "投稿する" %></li>
   </ul>
 <% end %>
