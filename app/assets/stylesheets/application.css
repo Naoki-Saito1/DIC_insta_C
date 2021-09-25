@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,36 @@
  *= require_tree .
  *= require_self
  */
+
+.alert-success{
+  height: 80px;
+  width: 100%;
+  border-bottom: 3px solid black;
+  justify-content: right;
+}
+h1 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+ p{
+   color: coral;
+ }
+ .form-group{
+   margin:20px 20px;
+ }
+ li {
+   list-style-type: none;
+ }
+ .footer {
+   width: 100%;
+   height: 70px;
+   text-align: center;
+   position: absolute;
+   bottom: 0;
+   background-color: pink;
+   padding-top: 10px;
+ }
+ 
