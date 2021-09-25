@@ -6,4 +6,5 @@
        <li><%= image_tag favorite.post.image.url, style:'width:200px'   if favorite.post.image.present? %></li>
     
 </ul>
+<%= link_to 'Back', user_path(current_user.id) %>
 <% end %>
